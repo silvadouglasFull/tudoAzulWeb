@@ -66,14 +66,14 @@ const Footer = () => {
                                 <Phone className="text-secondary mt-1" size={18} />
                                 <div>
                                     <p className="font-medium">WhatsApp</p>
-                                    <p className="text-primary-foreground/80">(19) 99534-9375</p>
+                                    <p className="text-primary-foreground/80">(19) 98216-3039</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
                                 <Instagram className="text-secondary mt-1" size={18} />
                                 <div>
                                     <p className="font-medium">Instagram</p>
-                                    <p className="text-primary-foreground/80">@tudoazul_piscinas</p>
+                                    <p className="text-primary-foreground/80">@tudoazulpiscinas3</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
