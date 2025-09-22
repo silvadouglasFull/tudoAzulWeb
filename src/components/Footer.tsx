@@ -1,4 +1,3 @@
-import tudoAzulLogo from "@/assets/images/tudo-azul-logo.jpeg";
 import { Button } from "@/components/ui/button";
 import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
@@ -18,7 +17,6 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Company Info */}
                     <div className="space-y-6">
-                        <img src={tudoAzulLogo} alt="Tudo Azul" className="h-16 w-auto brightness-0 invert" />
                         <p className="text-primary-foreground/80">
                             Especialistas em limpeza e manutenção de piscinas em Rio Claro/SP.
                             Profissionais qualificados para manter sua piscina sempre perfeita.
