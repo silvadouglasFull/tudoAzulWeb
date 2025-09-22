@@ -4,11 +4,11 @@ import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
     const openWhatsApp = () => {
-        window.open("https://wa.me/5519999999999?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
+        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
     };
 
     const openInstagram = () => {
-        window.open("https://instagram.com/tudoazul_piscinas", "_blank");
+        window.open("https://www.instagram.com/tudoazulpiscinas3/", "_blank");
     };
 
     return (
@@ -26,7 +26,6 @@ const Footer = () => {
                         <div className="flex space-x-4">
                             <Button
                                 onClick={openWhatsApp}
-                                variant="outline"
                                 size="sm"
                                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                             >
@@ -35,7 +34,6 @@ const Footer = () => {
                             </Button>
                             <Button
                                 onClick={openInstagram}
-                                variant="outline"
                                 size="sm"
                                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                             >
