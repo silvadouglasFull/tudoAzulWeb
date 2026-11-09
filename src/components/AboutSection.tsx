@@ -7,7 +7,6 @@ import { Award, Clock, MapPin, Shield, Star, Users } from "lucide-react";
 const AboutSection = () => {
     const stats = [
         { number: `${yearsOfExperience}`, label: "Anos de Experiência", icon: Clock },
-        { number: "500+", label: "Piscinas Atendidas", icon: Award },
         { number: "100%", label: "Clientes Satisfeitos", icon: Star },
         { number: "24h", label: "Resposta WhatsApp", icon: Shield }
     ];
@@ -85,7 +84,7 @@ const AboutSection = () => {
 
                     {/* Right Content - Stats */}
                     <div className="space-y-8">
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-3 gap-6">
                             {stats.map((stat, index) => (
                                 <Card
                                     key={index}
