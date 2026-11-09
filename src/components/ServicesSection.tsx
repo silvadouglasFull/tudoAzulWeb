@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { openWhatsApp } from "@/lib/utils";
 import { Droplets, Filter, Sparkles, TestTube, Timer, Wrench } from "lucide-react";
 
 const ServicesSection = () => {
@@ -41,11 +42,6 @@ const ServicesSection = () => {
             features: ["Visitas regulares", "Planos flexíveis", "Acompanhamento contínuo"]
         }
     ];
-
-    const openWhatsApp = () => {
-        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de conhecer os serviços de manutenção de piscina.", "_blank");
-    };
-
     return (
         <section id="servicos" className="py-20 bg-muted/30">
             <div className="container mx-auto px-4">

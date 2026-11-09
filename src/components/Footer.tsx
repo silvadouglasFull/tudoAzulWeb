@@ -1,32 +1,24 @@
-import tudoAzulLogo from "@/assets/images/tudo-azul-logo.jpeg";
 import { Button } from "@/components/ui/button";
-import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
+import { FormatedWhatsapp, instagram } from "@/constants/socialMidiaContact";
+import { openInstagram, openWhatsApp } from "@/lib/utils";
+import { Instagram, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
-    const openWhatsApp = () => {
-        window.open("https://wa.me/5519999999999?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
-    };
-
-    const openInstagram = () => {
-        window.open("https://instagram.com/tudoazul_piscinas", "_blank");
-    };
 
     return (
         <footer id="contato" className="bg-primary text-primary-foreground py-16">
             <div className="container mx-auto px-4">
                 {/* Main Footer Content */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     {/* Company Info */}
                     <div className="space-y-6">
-                        <img src={tudoAzulLogo} alt="Tudo Azul" className="h-16 w-auto brightness-0 invert" />
                         <p className="text-primary-foreground/80">
-                            Especialistas em limpeza e manutenção de piscinas em Rio Claro/SP.
+                            Especialistas em limpeza e manutenção de piscinas em Rio Claro e Santa Gertrudes.
                             Profissionais qualificados para manter sua piscina sempre perfeita.
                         </p>
                         <div className="flex space-x-4">
                             <Button
                                 onClick={openWhatsApp}
-                                variant="outline"
                                 size="sm"
                                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                             >
@@ -35,7 +27,6 @@ const Footer = () => {
                             </Button>
                             <Button
                                 onClick={openInstagram}
-                                variant="outline"
                                 size="sm"
                                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                             >
@@ -66,49 +57,25 @@ const Footer = () => {
                                 <Phone className="text-secondary mt-1" size={18} />
                                 <div>
                                     <p className="font-medium">WhatsApp</p>
-                                    <p className="text-primary-foreground/80">(19) 99999-9999</p>
+                                    <p className="text-primary-foreground/80">
+                                        {FormatedWhatsapp}
+                                    </p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
                                 <Instagram className="text-secondary mt-1" size={18} />
-                                <div>
+                                <div style={{
+                                    cursor: 'pointer'
+                                }} onClick={() => openInstagram()}>
                                     <p className="font-medium">Instagram</p>
-                                    <p className="text-primary-foreground/80">@tudoazul_piscinas</p>
+                                    <p className="text-primary-foreground/80">@{instagram}</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
                                 <MapPin className="text-secondary mt-1" size={18} />
                                 <div>
                                     <p className="font-medium">Região de Atendimento</p>
-                                    <p className="text-primary-foreground/80">Rio Claro/SP e região</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Business Hours */}
-                    <div>
-                        <h3 className="text-xl font-bold mb-6">Horário de Atendimento</h3>
-                        <div className="space-y-4">
-                            <div className="flex items-start space-x-3">
-                                <Clock className="text-secondary mt-1" size={18} />
-                                <div>
-                                    <p className="font-medium">Segunda a Sexta</p>
-                                    <p className="text-primary-foreground/80">8:00 - 18:00</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start space-x-3">
-                                <Clock className="text-secondary mt-1" size={18} />
-                                <div>
-                                    <p className="font-medium">Sábado</p>
-                                    <p className="text-primary-foreground/80">8:00 - 12:00</p>
-                                </div>
-                            </div>
-                            <div className="flex items-start space-x-3">
-                                <Mail className="text-secondary mt-1" size={18} />
-                                <div>
-                                    <p className="font-medium">WhatsApp 24h</p>
-                                    <p className="text-primary-foreground/80">Resposta garantida</p>
+                                    <p className="text-primary-foreground/80">Rio Claro e Santa Gertrudes</p>
                                 </div>
                             </div>
                         </div>
@@ -136,11 +103,11 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-primary-foreground/20 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <a href="https://www.instagram.com/dswebdev/" className="text-primary-foreground/60 text-sm">
+                        <a href="https://dswebdev.com.br/" className="text-primary-foreground/60 text-sm">
                             © {new Date().getFullYear()} Ds Web | Powerfull Programming. Todos os direitos reservados.
                         </a>
                         <div className="flex space-x-6 text-sm text-primary-foreground/60">
-                            <span>Rio Claro/SP</span>
+                            <span>Rio Claro e Santa Gertrudes</span>
                             <span>•</span>
                             <span>Profissionais Especializados</span>
                             <span>•</span>
