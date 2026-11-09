@@ -1,5 +1,6 @@
 import tudoAzulLogo from "@/assets/images/tudo-azul-logo.jpeg";
 import { Button } from "@/components/ui/button";
+import { openWhatsApp } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -11,11 +12,6 @@ const Header = () => {
         element?.scrollIntoView({ behavior: "smooth" });
         setIsMenuOpen(false);
     };
-
-    const openWhatsApp = () => {
-        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
-    };
-
     return (
         <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border shadow-card">
             <div className="container mx-auto px-4 py-4">

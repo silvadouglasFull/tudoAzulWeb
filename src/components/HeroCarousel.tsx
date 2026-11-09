@@ -2,6 +2,7 @@ import poolHero1 from "@/assets/pool-hero-1.jpg";
 import poolHero2 from "@/assets/pool-hero-2.jpg";
 import poolHero3 from "@/assets/pool-hero-3.jpg";
 import { Button } from "@/components/ui/button";
+import { openWhatsApp } from "@/lib/utils";
 import { ChevronLeft, ChevronRight, Clock, Droplets, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -12,7 +13,7 @@ const HeroCarousel = () => {
         {
             image: poolHero1,
             title: "Sua Piscina Sempre Cristalina",
-            subtitle: "Profissionais especializados em limpeza e manutenção de piscinas em Rio Claro/SP"
+            subtitle: "Profissionais especializados em limpeza e manutenção de piscinas em Rio Claro e Santa Gertrudes"
         },
         {
             image: poolHero2,
@@ -39,10 +40,6 @@ const HeroCarousel = () => {
 
     const prevSlide = () => {
         setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-    };
-
-    const openWhatsApp = () => {
-        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
     };
 
     return (

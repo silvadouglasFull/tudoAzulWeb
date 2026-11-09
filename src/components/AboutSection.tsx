@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { yearsOfExperience } from "@/constants/experiences";
+import { openWhatsApp } from "@/lib/utils";
 import { Award, Clock, MapPin, Shield, Star, Users } from "lucide-react";
 
 const AboutSection = () => {
     const stats = [
-        { number: "5+", label: "Anos de Experiência", icon: Clock },
+        { number: `${yearsOfExperience}`, label: "Anos de Experiência", icon: Clock },
         { number: "500+", label: "Piscinas Atendidas", icon: Award },
         { number: "100%", label: "Clientes Satisfeitos", icon: Star },
         { number: "24h", label: "Resposta WhatsApp", icon: Shield }
@@ -19,10 +21,6 @@ const AboutSection = () => {
         "Preços Justos"
     ];
 
-    const openWhatsApp = () => {
-        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de conhecer mais sobre a Tudo Azul.", "_blank");
-    };
-
     return (
         <section id="sobre" className="py-20 bg-background">
             <div className="container mx-auto px-4">
@@ -32,7 +30,7 @@ const AboutSection = () => {
                         Sobre a Tudo Azul
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                        Somos especialistas em limpeza e manutenção de piscinas em Rio Claro/SP,
+                        Somos especialistas em limpeza e manutenção de piscinas em Rio Claro e Santa Gertrudes,
                         comprometidos em oferecer serviços de excelência com profissionais qualificados.
                     </p>
                 </div>
@@ -114,11 +112,8 @@ const AboutSection = () => {
                                     <h4 className="text-xl font-semibold">Nossa Região</h4>
                                 </div>
                                 <p className="mb-4">
-                                    Atendemos Rio Claro e região com equipe local,
+                                    Atendemos Rio Claro e Santa Gertrudes com equipe local,
                                     garantindo rapidez no atendimento e conhecimento das necessidades locais.
-                                </p>
-                                <p className="text-sm opacity-90">
-                                    Rio Claro • Limeira • Araras • Piracicaba • Santa Gertrudes
                                 </p>
                             </CardContent>
                         </Card>
