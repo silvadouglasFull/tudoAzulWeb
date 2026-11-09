@@ -1,10 +1,7 @@
+import { openWhatsApp } from "@/lib/utils";
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppFloat = () => {
-    const openWhatsApp = () => {
-        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
-    };
-
     return (
         <>
             {/* Floating WhatsApp Button */}
