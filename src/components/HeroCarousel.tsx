@@ -117,9 +117,7 @@ const HeroCarousel = () => {
                         <Button
                             onClick={() => document.getElementById("servicos")?.scrollIntoView({ behavior: "smooth" })}
                             size="lg"
-                            variant="outline"
-                            className="px-8 py-4 text-lg font-semibold rounded-full border-white text-white hover:bg-white hover:text-primary"
-                        >
+                            className="btn-cta px-8 py-4 text-lg font-semibold rounded-full"                        >
                             Conhecer Serviços
                         </Button>
                     </div>

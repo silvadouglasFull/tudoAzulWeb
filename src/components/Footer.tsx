@@ -1,14 +1,13 @@
-import tudoAzulLogo from "@/assets/images/tudo-azul-logo.jpeg";
 import { Button } from "@/components/ui/button";
 import { Clock, Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
     const openWhatsApp = () => {
-        window.open("https://wa.me/5519999999999?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
+        window.open("https://wa.me/5519995349375?text=Olá! Gostaria de solicitar um orçamento para limpeza de piscina.", "_blank");
     };
 
     const openInstagram = () => {
-        window.open("https://instagram.com/tudoazul_piscinas", "_blank");
+        window.open("https://www.instagram.com/tudoazulpiscinas3/", "_blank");
     };
 
     return (
@@ -18,7 +17,6 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Company Info */}
                     <div className="space-y-6">
-                        <img src={tudoAzulLogo} alt="Tudo Azul" className="h-16 w-auto brightness-0 invert" />
                         <p className="text-primary-foreground/80">
                             Especialistas em limpeza e manutenção de piscinas em Rio Claro/SP.
                             Profissionais qualificados para manter sua piscina sempre perfeita.
@@ -26,7 +24,6 @@ const Footer = () => {
                         <div className="flex space-x-4">
                             <Button
                                 onClick={openWhatsApp}
-                                variant="outline"
                                 size="sm"
                                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                             >
@@ -35,7 +32,6 @@ const Footer = () => {
                             </Button>
                             <Button
                                 onClick={openInstagram}
-                                variant="outline"
                                 size="sm"
                                 className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
                             >
@@ -66,14 +62,14 @@ const Footer = () => {
                                 <Phone className="text-secondary mt-1" size={18} />
                                 <div>
                                     <p className="font-medium">WhatsApp</p>
-                                    <p className="text-primary-foreground/80">(19) 99999-9999</p>
+                                    <p className="text-primary-foreground/80">(19) 99534-9375</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
                                 <Instagram className="text-secondary mt-1" size={18} />
                                 <div>
                                     <p className="font-medium">Instagram</p>
-                                    <p className="text-primary-foreground/80">@tudoazul_piscinas</p>
+                                    <p className="text-primary-foreground/80">@tudoazulpiscinas3</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-3">
